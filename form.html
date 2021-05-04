@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> stormoTech|SignUp</title>
+    <link rel="stylesheet" href="formStyle.css">
+    <script>
+        function respond()
+        {
+            alert("User not Found!! Create a new Account first");
+        }
+    </script>
+</head>
+<body>
+    <!-- Back to Home button  -->
+    <h2 > <a id="backToHome" href="index.html"> Back to Home </a> </h2>
+    
+    <!-- Sign up form  -->
+    <div class="signup">
+        <h1 style="text-align: center;"> Log In </h1>
+        <form>
+            <ul class="form">
+                <li> 
+                    <label for="name"> Email or Username </label> <br>
+                    <input type="text" id="name" placeholder="E.g:username@email.com">
+                </li>
+                <li>
+                    <label for="pass"> Password </label> <br>
+                    <input type="text" id="pass" placeholder="Enter your password">
+                </li>
+                <li>
+                    <input type="submit" value="Log in" onclick="respond()">
+                </li>
+                <li id="forget"> Forgot password?</li>
+            </ul>
+            <br>
+            <p style="margin-left:40px"> Need an Account? <span style="color:green;cursor:pointer">SignUp</span></p>
+                 
+        </form>
+    </div>
+</body>
+</html>

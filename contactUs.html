@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="formStyle.css">
+    <script>
+        function myfunc()
+        {
+            window.alert("Thank You for your response!! ")
+        }
+    </script>
+</head>
+<body style="background:url(contactus.jpg) no-repeat;background-size: 100% 100%; ">
+    <div style="float:left;margin:70px 50px;height:600px;background:rgba(9, 18, 44,0.7);border:2px solid black;" class="signup">
+        <h1 style="text-align: center;"> Contact Us </h1>
+        <form class="form">
+            <ul >
+                <li> 
+                    <label for="name"> Name </label> <br>
+                    <input type="text" id="name" placeholder="Enter your Name">
+                </li>
+                <li>
+                    <label for="email"> Email </label> <br>
+                    <input type="email" id="email" placeholder="Enter your Email">
+                </li>
+                <li>
+                    <p>Subject 
+                    <select> 
+                        <option> Website suggestion or Problem</option>
+                        <option> Thank you</option>
+                        <option> General Comment</option>
+                    </select>
+                    </p>
+                </li>
+                <li>
+                    <label for="msg">  Message </label> <br>
+                    <textarea rows="10" cols="50"> </textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Send" onclick="myfunc()">
+                </li>
+        </form>
+    </div>
+    
+</body>
+</html>

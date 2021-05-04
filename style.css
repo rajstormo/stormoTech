@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    /* font-family:cursive; */
+    text-decoration:none;
+}
+/* COMPANY LOGO  */
+#first{
+    font-family: 'Orbitron',sans-serif;
+    color:white;
+    float:left;
+    text-align:right;
+    width:300px;
+    font-size:30px;
+    line-height: 80px;
+}
+
+/* Main container(div1)  */
+.main{
+    position:fixed;
+    width:100%;
+    top:0;
+    height: 80px;
+    z-index: 1;
+    background-color:rgb(45, 45, 48);
+    /* background-color:transparent; */
+    font-family: cursive;
+}
+
+.main ul{
+
+    float:right;
+    list-style-type: none;
+    margin-left:200px;
+    width:60%;
+}
+
+.main ul li {
+    display:inline-block;
+    line-height: 80px;
+    margin:0 ;
+}
+
+.main ul li a{
+    text-decoration: none;
+    font-size:18px;
+    padding:7px 17px;
+    color:white;
+}
+
+ul li a:hover{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+/* Active Home button  */
+#active { background-color: black;border-radius: 5px;}
+#active:hover{ cursor:pointer}
+
+/* LOGIN BUTTON  */
+#login{
+    float:right;
+    margin-right:15px;
+    padding:0 20px;
+}
+
+#login a{
+    background-color:rgba(128, 128, 128,0.3);
+    color:whitesmoke;
+    font-size:15px;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+/* second div tag */
+.content {
+    margin-top:80px;
+    height:650px;
+}
+
+.content img{
+    height:100%;
+    width:100%;
+}
+.content h1{
+    position:absolute;
+    top:150px;
+    left:400px;
+    font-size:45px;
+}
+.content p{
+    position:absolute;
+    width:600px;
+    top:300px;
+    left:80px;
+    font-size:28px;
+    /* font-family: 'Abel', sans-serif; */
+}
+
+.content h2 {
+    position:absolute;
+    text-align: center;
+    top:500px;
+    left:250px;
+    background-color:rgba(141, 137, 134, 0.8); 
+    border:1px solid black;
+    border-radius:3px;
+}
+
+.content h2 a {
+    color:black;
+    padding:0px 40px;
+}
+
+.content a:hover{
+    color:white;
+    font-weight: 100;
+    background-color: rgb(45, 45, 48);
+}
+
+/* third div tag ---Services */
+
+div h1{
+    margin-top:20px;
+    padding:20px;
+    font-size:45px;
+    text-align: center;
+}
+
+.grids{
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    text-align: center; 
+}
+.box1,.box2{
+    /* background: rgba(120, 205, 226, 0.301); */
+     padding:30px;
+     margin:30px;
+     border-radius: 20px;
+     font-size:20px;
+}
+
+.box1{ border:2px solid brown;}
+.box2{ margin-top:-100px; border:1px solid black;}
+
+.box1 img{
+    height:150px;
+    width:150px;
+}
+.box1 p,.box2 p{
+    margin-top:15px;
+}
+
+.grids#unique div:nth-child(even){
+    background-color: rgba(144, 238, 144,0.2);
+}
+.grids#unique div:nth-child(odd){
+    background-color:rgba(158, 39, 39, 0.1);
+}

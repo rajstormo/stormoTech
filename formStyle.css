@@ -1,0 +1,73 @@
+*{box-sizing: border-box;}
+
+body { 
+    background: url(bg2.jpg) ; 
+    color:white;
+}
+
+#backToHome  {
+    padding:8px;
+    background-color:grey;
+    
+    color:black;
+    text-decoration: none;
+    border-radius:5px;
+}
+.signup
+{
+    border:2px solid rgb(129, 76, 76);
+    border-radius:5px;
+    height:500px;
+    width:500px;
+    margin:80px auto;
+}
+.form{
+    margin:10px ;
+    list-style: none;
+}
+.form ul { list-style: none;}
+
+.form li input[type=text],input[type="email"]
+{
+    margin:10px 0;
+    padding:6px 2px;
+    width:70%;
+    border-radius:5px;
+    border:none;
+}
+.form li input[type=text]:focus{
+    border: 2px solid lightgreen;
+    border-radius:10px;
+    width:90%;
+    outline:none;
+    /* outline-offset: 0; */
+}
+.form li input[type="email"]:focus{
+    border: 2px solid lightgreen;
+    border-radius:6px;
+    width:90%;
+    outline:none;
+}
+.form li input[type=submit]{
+    border: 1px solid green;
+    width:150px;
+    margin:25px 28%;
+    padding:8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#forget { margin:0 33%;}
+#forget:hover{color:green;cursor:pointer;}
+
+/* textarea field for contactUs page  */
+.form li textarea{ margin:10px 0;}
+.form li textarea:focus{
+     border: 2px solid lightgreen;
+     outline:none;
+     border-radius:5px;
+}
+.form li select{
+    padding:5px 10px;
+    margin:5px;
+    border-radius: 6px;
+}
